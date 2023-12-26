@@ -1,5 +1,4 @@
-def is_palindrom(x):
-    return x == x[::-1]
+is_palindrome = lambda x: x == x[::-1]
 
 
 def generate_palindroms():
@@ -7,7 +6,7 @@ def generate_palindroms():
         for j in range(999):
             number = (999 - i) * (999 - j)
             s = str(number)
-            if is_palindrom(s):
+            if is_palindrome(s):
                 yield number
 
 
