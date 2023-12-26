@@ -25,7 +25,5 @@ def find_n_prime(n):
     primes = list(find_primes(upper_bound(n)))
     return primes[n - 1]
 
-print(upper_bound(10001))
-
 
 print(find_n_prime(10001))
